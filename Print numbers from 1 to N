@@ -1,0 +1,25 @@
+
+import java.util.*;
+public class Main {
+    static void printNumbers(int n)
+    {
+        if(n<1)
+        {
+            return ;
+        }
+        printNumbers(n-1);
+        System.out.print(n+" ");
+    }
+    public static void main(String[] args) {
+        System.out.println("Recursion to print numbers from 1 to N");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        printNumbers(n);
+    }
+}
+
+// Output 
+
+Recursion to print numbers from 1 to N
+1 2 3 4 5 
